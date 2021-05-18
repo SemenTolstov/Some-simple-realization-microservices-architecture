@@ -1,11 +1,13 @@
 # softage_test
 
+# HOWTO run in Windows MINGW environment
+
 cd employeeservice
-mvn package
+./mvnw package
 cd ..
 
 cd reportservice
-mvn package
+./mvnw package
 cd ..
 
 java -jar employeeservice/target/employeeservice-0.0.1-SNAPSHOT.jar &
