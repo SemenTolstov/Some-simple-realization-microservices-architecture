@@ -15,11 +15,11 @@ import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 public interface EmployeesServiceClient {
 
     @GetMapping(value = "/", consumes = APPLICATION_JSON_VALUE)
-    List<Employee> getEmployees();
+    List<Employee> getAll();
 
     @GetMapping(value = "/", consumes = APPLICATION_JSON_VALUE)
     Employee saveEmployee(@RequestBody Employee employee);
 
     @GetMapping(value = "/{id}", consumes = APPLICATION_JSON_VALUE)
-    Employee getEmployee(@PathVariable("id") int id);
+    Employee get(@PathVariable("id") int id);
 }
