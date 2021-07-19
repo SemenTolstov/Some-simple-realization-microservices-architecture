@@ -1,4 +1,4 @@
-# softage_test
+
 
 # HOWTO run in Windows MINGW environment
 
